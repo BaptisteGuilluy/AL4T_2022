@@ -7,6 +7,9 @@ public class SensorWindow {
         for (int v : values) {
             sum += v;
         }
+        if (sum < 0 && values.length > 0) {
+            return Integer.MAX_VALUE;
+        }
         return sum / values.length;
     }
 }

@@ -14,7 +14,7 @@ public class Account {
     }
 
     public double getBalance() {
-        return balance;
+        return Math.round(balance*100.0)/100.0;
     }
 
     public void deposit(double amount) {

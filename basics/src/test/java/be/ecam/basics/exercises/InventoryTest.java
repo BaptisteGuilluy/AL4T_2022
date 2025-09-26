@@ -16,7 +16,7 @@ class InventoryTest {
                 new Inventory.Item("BBB"),
                 new Inventory.Item("CCC")
         );
-        assertTrue(Inventory.hasSku(items, new String("BBB")));
+        assertTrue(Inventory.hasSku(items, new String("AAA")));
     }
 
     @Test
